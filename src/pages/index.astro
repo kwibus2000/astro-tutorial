@@ -1,4 +1,5 @@
 ---
+const pageTitle = 'Mijn Astro webstek'
 ---
 
 <html lang='en'>
@@ -7,13 +8,12 @@
     <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
     <meta name='viewport' content='width=device-width' />
     <meta name='generator' content={Astro.generator} />
-    <title>Astro</title>
+    <title>{pageTitle}</title>
   </head>
   <body>
     <a href='/'>Thuis</a>
     <a href='/about'>Over mij</a>
     <a href='/blog'>Mijn blogs</a>
-    <h1>Astro</h1>
-    <h1>Mijn Astro webstek</h1>
+    <h1>{pageTitle}</h1>
   </body>
 </html>

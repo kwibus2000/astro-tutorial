@@ -1,4 +1,18 @@
 ---
+const pageTitle = 'Over mij'
+
+const identity = {
+  firstName: 'Ad',
+  country: 'Nederland',
+  occupation: 'gepensioneerd boekhouder',
+  hobbies: ['volleybal kijken', 'programmeren', 'podcasts beluisteren']
+}
+
+const skills = ['HTML', 'CSS', 'Javascript', 'React', 'Astro']
+
+const happy = true
+const finished = false
+const goal = 3
 ---
 
 <html lang='en'>
@@ -7,14 +21,13 @@
     <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
     <meta name='viewport' content='width=device-width' />
     <meta name='generator' content={Astro.generator} />
-    <title>Astro</title>
+    <title>{pageTitle}</title>
   </head>
   <body>
     <a href='/'>Thuis</a>
     <a href='/about'>Over mij</a>
     <a href='/blog'>Mijn blogs</a>
-    <h1>Mijn Astro webstek</h1>
-    <h1>Over mij</h1>
+    <h1>{pageTitle}</h1>
     <h2>... en mijn nieuwe Astro webstek</h2>
 
     <p>
@@ -27,5 +40,36 @@
       geplaatst, of bestaande wordt veranderd. Natuurlijk moeten de
       veranderingen daarvoor wel eerst gepusht worden naar GitHub!
     </p>
+    <p>Een paar feiten over mij:</p>
+    <ul>
+      <li>Mijn naam is {identity.firstName}.</li>
+      <li>
+        Ik woon in {identity.country} en ik ben een {identity.occupation}.
+      </li>
+      {
+        identity.hobbies.length >= 2 && (
+          <li>
+            Twee van mijn hobby's zijn: {identity.hobbies[0]} en
+            {identity.hobbies[1]}.
+          </li>
+        )
+      }
+    </ul>
+    <p>Ik gebruik de volgende 'gereedschappen'</p>
+    <ul>
+      {skills.map(skill => <li>{skill}</li>)}
+    </ul>
+
+    {happy && <p>Ik ben blij dat ik Astro aan het leren ben!</p>}
+
+    {finished && <p>Ik heb deze tutorial afgemaakt</p>}
+
+    {
+      goal === 3 ? (
+        <p>Mijn doel is dit af te maken in 3 dagen.</p>
+      ) : (
+        <p>Mijn doel is niet 3 dagen.</p>
+      )
+    }
   </body>
 </html>
