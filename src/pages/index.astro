@@ -1,19 +1,8 @@
 ---
+import BaseLayout from '../layouts/BaseLayout.astro'
 const pageTitle = 'Mijn Astro webstek'
 ---
 
-<html lang='en'>
-  <head>
-    <meta charset='utf-8' />
-    <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
-    <meta name='viewport' content='width=device-width' />
-    <meta name='generator' content={Astro.generator} />
-    <title>{pageTitle}</title>
-  </head>
-  <body>
-    <a href='/'>Thuis</a>
-    <a href='/about'>Over mij</a>
-    <a href='/blog'>Mijn blogs</a>
-    <h1>{pageTitle}</h1>
-  </body>
-</html>
+<BaseLayout pageTitle={pageTitle}>
+  <h2>Mijn blog subtitel</h2>
+</BaseLayout>

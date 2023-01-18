@@ -1,25 +1,30 @@
 ---
-title: 'Mijn eerste Blog'
-pubDate: 2023-01-11
-description: 'Dit is de eerste bijdrage aan mijn nieuwe Astro Blog'
-author: 'Ad Rienks'
+layout: ../../layouts/MarkdownPostLayout.astro
+title: 'My First Blog Post'
+pubDate: 2022-07-01
+description: "This is the first post of my new Astro blog."
+author: "Astro Learner"
 image:
-url: 'https://astro.build/assets/blog/astro-1-release-update/cover.jpeg'
-alt: 'Het Astro logo met het woord One.'
-tags: ["astro", "blog", "publiek leren"]
+img_url: "https://astro.build/assets/blog/astro-1-release-update/cover.jpeg"
+alt: "The Astro logo with the word One."
+tags: ["astro", "bloggen", "publiek leren"]
 ---
-# Mijn eerste Blog-bijdrage
 
-Gepubliceerd: 11 januari 2023
+# My First Blog Post
 
-Welkom bij mijn _nieuwe blog_ over het leren van Astro! Hier deel ik het leertraject terwijl ik een nieuwe webstek bouw.
+Published on: 2022-07-01
 
-## Wat ik al heb gedaan
+Welcome to my _new blog_ about learning Astro! Here, I will share my learning journey as I build a new website.
 
-1. **Astro installeren**: Eerst heb ik een een nieuw Astro project gecreeërd en geopend in VSCode.
-2. **Pagina's**: Nieuwe `.astro`-bestanden maken in de `src\pages` folder.
-3. **Blogs**: Dit is mijn eerste Blog-bijdrage. Ik heb nu Astro pagina's en Markdown meldingen!
+## What I've accomplished
 
-## En daarna?
+1. **Installing Astro**: First, I created a new Astro project and set up my online accounts.
 
-Ik zal de tutorial afmaken, en dan meer bijdragen toevoegen. Bezoek deze website regelmatig, er komt meer!
+2. **Making Pages**: I then learned how to make pages by creating new `.astro` files and placing them in the
+`src/pages/` folder.
+
+3. **Making Blog Posts**: This is my first blog post! I now have Astro pages and Markdown posts!
+
+## What's next
+
+I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
